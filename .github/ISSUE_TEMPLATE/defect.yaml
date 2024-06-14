@@ -1,0 +1,53 @@
+---
+name: Defect
+description: Report a defect, such as a bug or regression.
+labels:
+  - defect
+body:
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+      description: Describe the unexpected behavior or performance regression you are observing.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: Describe the expected behavior or performance characteristics.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Host environment
+      description: |-
+        Specify any relevant details about the host environment,
+        such as version/commit used, operating system, CPU architecture, container runtime, etc.
+    validations:
+      required: false
+  - type: textarea
+    id: configuration
+    attributes:
+      label: Guest configuration
+      description: |-
+        Specify any relevant details about the guest configuration,
+        such as kernel version, external dependencies version, initramfs details, lambdo config file, etc.
+    validations:
+      required: false   
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide as many concrete steps to reproduce the defect.
+    validations:
+      required: false
+   - type: textarea
+    id: details
+    attributes:
+      label: Other details
+      description: Provide as many details or other information that may be relevant to the defect.
+    validations:
+      required: false
+

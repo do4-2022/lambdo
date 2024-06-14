@@ -1,0 +1,39 @@
+---
+name: Proposal
+description: Propose an enhancement or new feature.
+labels:
+  - proposal
+body:
+  - type: textarea
+    id: change
+    attributes:
+      label: Proposed change
+      description: |-
+        This could be a behavior change, enhanced API, or a new feature.
+        Be explicit about the changes intended and how they will address the problem. 
+        You can include code snippets, architectural diagrams, or any other relevant information.
+    validations:
+      required: true
+  - type: textarea
+    id: usecase
+    attributes:
+      label: Use case
+      description: What is the use case or general motivation for this proposal?
+    validations:
+      required: true
+  - type: textarea
+    id: contribute
+    attributes:
+      label: Contribution
+      description: |-
+        Are you intending or interested in contributing code for this proposal if accepted?
+        If so, please indicate what you are interested in contributing.
+    validations:
+      required: false
+  - type: textarea
+    id: details
+    attributes:
+      label: Other details
+      description: Provide as many details or other information that may be relevant to the proposal.
+    validations:
+      required: false
